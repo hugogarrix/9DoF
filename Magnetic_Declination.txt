@@ -1,0 +1,66 @@
+/* ======================================================================
+*  Finding your Magnetic Declination and converting it to decimal degrees
+*/ ======================================================================
+
+...First, open http://www.magnetic-declination.com in your browser
+
+   Search on the left hand side of the map
+
+...Zoom in using your mouse scroll wheel and click-drag to move
+
+...Left-Click once to pin your location and popup your data
+
+   You will get something like this:
+
+     You clicked here:
+Latitude: 51° 30' 0" N
+Longitude: 0° 7' 0" W
+LONDON
+Magnetic Declination: -0° 15'
+Declination is NEGATIVE (WEST)
+Inclination: 66° 26'
+Magnetic field strength: 48791.2 nT
+   
+   
+
+
+Note the sign on declination is either negative or positive (WEST or EAST)
+It will say either Declination is NEGATIVE (WEST) or POSITIVE (EAST)
+
+Magnetic Declination changes over time, and the degree of change varies 
+between locations. This means that you should update your Magnetic 
+Declination once or twice a year and re-flash your Tracker sketch
+
+--------------------------------
+
+London gives:
+Magnetic Declination: -0° 15'
+Declination is NEGATIVE (WEST)
+
+Calc: 0 + (15/60) = 0.25
+Result: MINUS 0.25
+i.e. -0.25
+
+--------------------------------
+
+Paris gives:
+Magnetic Declination: +0° 46'
+Declination is POSITIVE (EAST)
+
+Calc: 0 + (46/60) = 0.767
+Result: PLUS 0.767
+i.e. 0.767
+
+--------------------------------
+
+New York gives:
+Magnetic Declination: -12° 52'
+Declination is NEGATIVE (WEST)
+
+Calc: 12 + (52/60) = 12.867
+Result: MINUS 12.867
+i.e. -12.867
+
+--------------------------------
+
+
