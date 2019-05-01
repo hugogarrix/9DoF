@@ -28,10 +28,10 @@ void loop()
     {
         mpu.update();
 
+        Serial.print(mpu.getQuaternion(3));Serial.print(",");
         Serial.print(mpu.getQuaternion(0));Serial.print(",");
         Serial.print(mpu.getQuaternion(1));Serial.print(",");
-        Serial.print(mpu.getQuaternion(2));Serial.print(",");
-        Serial.println(mpu.getQuaternion(3));
+        Serial.println(mpu.getQuaternion(2));
 
         prev_ms = millis();
     }
